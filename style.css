@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css/css2?family=Pooppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poopins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+    color: #00f7ff;
+}
+
+nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ccc;
+    transition:0.3s ;
+}
+
+nav a:hover,
+nav a:active{
+    color: #00f7ff;
+}
+
+.contact-btn{
+    padding: 8px 20px;
+    background: #00f7ff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    min-height: 90vh;
+}
+
+.home-img img{
+    width: 320px;
+    border-radius: 8px;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h4{
+    color: #00f7ff;
+    margin-bottom: 10px;
+}
+
+.home-content h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.home-content span{
+    color: #00f7ff;
+}
+
+.home-content p{
+    color: #aaa;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn{
+    padding:10px 25px ;
+    background: transparent;
+    border: 2px solid #00f7ff;
+    color: #00f7ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #00f7ff;
+    color: #000;
+}
+
+.contact{
+    padding: 80px 8%;
+    text-align: center;
+    color: yellow;
+    background: #111;;
+}
+.contact a{
+    color: #fff;
+}
+
+.contact h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: rgb(0, 255, 255);
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons i{
+    color:#fff;
+    font-size: 30px;
+}
+
+.social-icons a{
+    font-size: 28px;
+    color: yellow;
+    transition: 0.3s;
+    margin: 10px;
+    display: inline-block;
+}
+
+.social-icons a:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+.compétences{
+    padding: 80px 8%;
+}
+.skills .skill{
+    margin-bottom: 20px;
+}
+.bar{
+    background: #333;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.bar span{
+    display: block;
+    height: 10px;
+    border-radius: 5px;
+}
+.html{width: 90%; background: #e44d26;}
+.css{width: 80%; background: #264de4;}
+.git{width: 70%; background: #f1502f;}
+.responsive{width: 75%; background: #00c6ff;}
+@media(max-width:900px){
+    .home{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img{
+        margin-bottom: 30px;
+    }
+}
